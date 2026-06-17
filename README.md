@@ -11,7 +11,6 @@
 ## 🌍 Visítalo en:
 [https://github.com/alvdelga/Maestro42](https://github.com/alvdelga/Maestro42)
 
-
 ## 🚀 Características
 
 - Compatible con **ExamRank02 a 06** y **PiscineExam**

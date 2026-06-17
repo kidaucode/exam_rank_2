@@ -7,3 +7,8 @@ swap_bits
 str_capitalizer
 ft_putstr
 print_bits
+fizzbuzz
+snake_to_camel
+search_and_replace
+ft_strcmp
+lcm

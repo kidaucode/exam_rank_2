@@ -1,27 +1,27 @@
-Assignment name  : str_capitalizer
-Expected files   : str_capitalizer.c
-Allowed functions: write
+Assignment name  : search_and_replace
+Expected files   : search_and_replace.c
+Allowed functions: write, exit
 --------------------------------------------------------------------------------
 
-Write a program that takes one or several strings and, for each argument,
-capitalizes the first character of each word (If it's a letter, obviously),
-puts the rest in lowercase, and displays the result on the standard output,
-followed by a \n.
+Write a program called search_and_replace that takes 3 arguments, the first
+arguments is a string in which to replace a letter (2nd argument) by
+another one (3rd argument).
 
-A "word" is defined as a part of a string delimited either by spaces/tabs, or
-by the start/end of the string. If a word only has one letter, it must be
-capitalized.
+If the number of arguments is not 3, just display a newline.
 
-If there are no arguments, the progam must display \n.
+If the second argument is not contained in the first one (the string)
+then the program simply rewrites the string followed by a newline.
 
-Example:
-
-$> ./str_capitalizer | cat -e
+Examples:
+$>./search_and_replace "Papache est un sabre" "a" "o"
+Popoche est un sobre
+$>./search_and_replace "zaz" "art" "zul" | cat -e
 $
-$> ./str_capitalizer "a FiRSt LiTTlE TESt" | cat -e
-A First Little Test$
-$> ./str_capitalizer "__SecONd teST A LITtle BiT   Moar comPLEX" "   But... This iS not THAT COMPLEX" "     Okay, this is the last 1239809147801 but not    the least    t" | cat -e
-__second Test A Little Bit   Moar Complex$
-   But... This Is Not That Complex$
-     Okay, This Is The Last 1239809147801 But Not    The Least    T$
-$>
+$>./search_and_replace "zaz" "r" "u" | cat -e
+zaz$
+$>./search_and_replace "jacob" "a" "b" "c" "e" | cat -e
+$
+$>./search_and_replace "ZoZ eT Dovid oiME le METol." "o" "a" | cat -e
+ZaZ eT David aiME le METal.$
+$>./search_and_replace "wNcOre Un ExEmPle Pas Facilw a Ecrirw " "w" "e" | cat -e
+eNcOre Un ExEmPle Pas Facile a Ecrire $
